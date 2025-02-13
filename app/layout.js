@@ -7,6 +7,8 @@ import { Toaster } from "@/components/ui/toaster";
 import SessionWrapper from "@/lib/SessionWrapper";
 import { getServerSession } from "next-auth";
 import Script from "next/script";
+import Header from "@/components/forever/custom/Header";
+// import Header from "@/components/forever/custom/Header";
 
 const arizonia = Arizonia({
   subsets: ["latin"],
@@ -30,7 +32,7 @@ export default async function RootLayout({ children }) {
     <html lang="en">
       <body className={`${urbanist.variable} ${arizonia.variable}`}>
         <SessionWrapper session={session}>
-          <Nav />
+          <Header />
           {children}
           <FooterSection />
           <CopyRightSection />

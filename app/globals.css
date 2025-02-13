@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Work Sans", sans-serif;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -201,21 +207,48 @@
 }
 
 /* .slider-dot-container {
-  @apply flex items-center justify-center w-4 mx-2;
+  @apply flex justify-center items-center mx-2 w-4;
 }
 .slider-dot-container ul {
-  @apply flex-col items-center justify-center space-y-3;
+  @apply flex-col justify-center items-center space-y-3;
 }
 .slick-active .slider-bullet {
-  @apply w-2 transition-all duration-500 delay-75 rounded-full cursor-pointer bg-primary;
+  @apply bg-primary rounded-full w-2 transition-all duration-500 delay-75 cursor-pointer;
   height: 30px !important;
 }
 
 .slider-bullet {
-  @apply w-2 transition-all duration-500 delay-75 rounded-full cursor-pointer bg-slate-400 hover:bg-primary;
+  @apply bg-slate-400 hover:bg-primary rounded-full w-2 transition-all duration-500 delay-75 cursor-pointer;
   height: 8px;
 } */
 
 .btn-primary{
-  @apply text-sm font-semibold text-white bg-black border-none hover:bg-green-800;
+  @apply bg-black hover:bg-green-800 border-none font-semibold text-white text-sm;
+}
+
+.text-primary{
+  color: #004236;
+}
+
+.text-subtext {
+  color: #c4ac70;
+}
+
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: #e0e3e8;
+}
+
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: #004236;
+}
+
+.bg-lavender {
+  --tw-bg-opacity: 1;
+  background-color: #f8f3e8;
+}
+
+.font-\[\'WorkSons\'\] {
+  font-family: WorkSons;
 }
