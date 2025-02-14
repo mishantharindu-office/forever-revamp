@@ -234,6 +234,10 @@
   color: #c4ac70;
 }
 
+.bg-subtext {
+  background-color: #c4ac70;
+}
+
 .bg-secondary {
   --tw-bg-opacity: 1;
   background-color: #e0e3e8;
